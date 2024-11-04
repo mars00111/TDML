@@ -21,5 +21,27 @@ The following diagrams show our framework performance based on the ResNet-50 wit
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="imgs/our_test_acc.jpg" alt="Figure 1" width="300"><br>
+      <b>Figure 3: Our framework’s training loss</b>
+    </td>
+    <td style="text-align: center;">
+      <img src="imgs/baseline_test_acc.jpg" alt="Figure 2" width="300"><br>
+      <b>Figure 4: Baseline training loss</b>
+    </td>
+  </tr>
+</table>
+
+
+Our model achieves a similar performance of 90% accuracy to that of a single computing node, as shown in Figure 1. However, similar to the issues faced with FedAvg DP, a larger number of DP negatively impacts convergence performance. The blue line (8 DP + MP, client[8]) shows lower accuracy than setups with fewer DPs, reaching 90% accuracy after 100 epochs, whereas others achieve this after 75 epochs.
+
+
+## Requirements
+
+- Python >= 3.11
+- PyTorch >= 2.2
+
 Further information will be shared soon.
 
