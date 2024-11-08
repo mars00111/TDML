@@ -62,6 +62,7 @@ The following diagrams show our framework performance based on the ResNet-50 wit
 
 Our model achieves a similar performance of 90% accuracy to that of a single computing node, as shown in Figure 1. However, similar to the issues faced with FedAvg DP, a larger number of DP negatively impacts convergence performance. The blue line (8 DP + MP, client[8]) shows lower accuracy than setups with fewer DPs, reaching 90% accuracy after 100 epochs, whereas others achieve this after 75 epochs.
 
+## Malicious Node Detection
 
 We designed a two-stage malicious discovery process inspired by the
 MANDERA method and illustrated the behavior for various types of attacks, including Gaussian attacks, Zero gradient attacks, and Mean shift attacks. Our malicious discovery method and cross-validation mechanism efficiently identify suspicious attacking nodes while verifying the work of computing nodes for the reward system.
@@ -83,10 +84,23 @@ MANDERA method and illustrated the behavior for various types of attacks, includ
   </tr>
 </table>
 
+
 ## Requirements
 
 - Python >= 3.11
 - PyTorch >= 2.2
+- torchvision >= 0.17.0
+
+
+## Execution
+
+In terminal, type the following command to start the demo training process.
+
+```bash
+$ python demo.py --num-trainers 2 --num-ps 2
+```
+
+If you want to support distributed training, please setup the **MASTER_ADDR** and **MASTER_PORT** in the [configs.py](configs.py)
+
 
 Further information will be shared soon.
-
