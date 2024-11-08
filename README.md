@@ -10,7 +10,15 @@ The following diagrams show our framework performance based on the ResNet-50 wit
 
 
 
-<table style="border-collapse: collapse; border: none; width: 100%;">
+| ![Image 1](imgs/our_test_acc.jpg) | ![Image 2](imgs/baseline_test_acc.jpg) |
+|:----------------------------:|:----------------------------:|
+| **Figure 1: Our framework's testing accuracy**      | **Figure 2: Baseline testing accuracy**      |
+
+| ![Image 3](imgs/our_test_acc.jpg) | ![Image 4](imgs/baseline_test_acc.jpg) |
+| **Figure 3: Our framework’s training loss**      | **Figure 4: Baseline training loss**      |
+
+
+<!-- <table style="border-collapse: collapse; border: none; width: 100%;">
   <tr>
     <td style="text-align: center; border: none;">
       <img src="imgs/our_test_acc.jpg" alt="Figure 1" width="300"><br>
@@ -21,9 +29,9 @@ The following diagrams show our framework performance based on the ResNet-50 wit
       <b>Figure 2: Baseline testing accuracy</b>
     </td>
   </tr>
-</table>
+</table> -->
 
-<table style="border-collapse: collapse; border: none; width: 100%;">
+<!-- <table style="border-collapse: collapse; border: none; width: 100%;">
   <tr>
     <td style="text-align: center; border: none;">
       <img src="imgs/our_test_acc.jpg" alt="Figure 1" width="300"><br>
@@ -34,7 +42,7 @@ The following diagrams show our framework performance based on the ResNet-50 wit
       <b>Figure 4: Baseline training loss</b>
     </td>
   </tr>
-</table>
+</table> -->
 
 
 Our model achieves a similar performance of 90% accuracy to that of a single computing node, as shown in Figure 1. However, similar to the issues faced with FedAvg DP, a larger number of DP negatively impacts convergence performance. The blue line (8 DP + MP, client[8]) shows lower accuracy than setups with fewer DPs, reaching 90% accuracy after 100 epochs, whereas others achieve this after 75 epochs.
