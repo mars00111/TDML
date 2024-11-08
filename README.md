@@ -13,7 +13,7 @@ The following diagrams show our framework performance based on the ResNet-50 wit
 <table>
   <tr>
     <td style="text-align: center;">
-      <img src="imgs/our_test_acc.jpg" alt="Figure 1" width="200"><br>
+      <img src="imgs/our_test_acc.jpg" alt="Figure 1" width="300"><br>
       Figure 1: Our framework's testing accuracy
     </td>
     <td style="text-align: center;">
@@ -23,7 +23,7 @@ The following diagrams show our framework performance based on the ResNet-50 wit
   </tr>
   <tr>
     <td style="text-align: center;">
-      <img src="imgs/our_test_acc.jpg" alt="Figure 3" width="200"><br>
+      <img src="imgs/our_test_acc.jpg" alt="Figure 3" width="300"><br>
       Figure 3: Our framework’s training loss
     </td>
     <td style="text-align: center;">
